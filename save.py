@@ -1,5 +1,8 @@
 import pandas as pd
 import datetime
+import os
+
+os.makedirs("data", exist_ok=True)
 
 def save_to_csv(news, trends):
     today = datetime.date.today()
